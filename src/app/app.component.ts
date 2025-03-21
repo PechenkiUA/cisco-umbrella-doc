@@ -9,7 +9,7 @@ import {IpServiceService} from './ip-service.service';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, DynamicIpComponent, MatButton, StaticComponent, JsonPipe],
+  imports: [RouterOutlet, DynamicIpComponent, MatButton, StaticComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
