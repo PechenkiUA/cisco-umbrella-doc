@@ -1,0 +1,32 @@
+<mat-stepper orientation="vertical">
+  <mat-step>
+    <ng-template matStepLabel>Повідомити про вашу IP адресу</ng-template>
+    <ng-template matStepContent>
+      <p>Повідомте вашу IP адресу до вашого Управління освіти. Вас додадуть до системи</p>
+
+      <button mat-button matStepperNext>Далі</button>
+    </ng-template>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Встановіть програму OpenDNS Updater</ng-template>
+    <ng-template matStepContent>
+      <p>
+        У випадку використання динамічної IP адреси ви можете скористатись наступним посиланням (https://safe-hromada.com.ua/docs/add-dynamic-ip/) для отримання детальних інструкцій що і як робити і для встановлення спеціального додатку OpenDNS Updater, який автоматизує оновлення цієї адреси для Cisco Umbrella. Додаток необхідно встановити хоча б на один компʼютер в мережі. Обов’язково треба повідомити відділ освіти про те чи у вас динамічна адреса.
+      </p>
+       <b> Особливості роботи спеціального додатку OpenDNS Updater:</b>
+        <ul>
+          <li> він повинен бути постійно запущеним на стаціонарному комп’ютері</li>
+          <li> його не бажано ставити на комп’ютери, які можуть бути переміщені в інший сегмент мережі чи в який співробітники можуть забрати додому</li>
+          <li> при логіні слід вводити свій логін та пароль в панель керування Cisco Umbrella (відповідно зазначені дані ви можете отримати у відділі освіти)</li>
+        </ul>
+
+
+      <button mat-button matStepperNext>Далі</button>
+    </ng-template>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Перевірка захисту пристрою</ng-template>
+    <app-check></app-check>
+    <button mat-button matStepperPrevious>Back</button>
+  </mat-step>
+</mat-stepper>

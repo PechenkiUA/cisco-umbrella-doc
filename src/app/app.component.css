@@ -1,0 +1,9 @@
+.content .head{
+  text-align: center;
+}
+
+.pill-group button.active{
+  background-color: #cccccc;
+  color: white;
+
+}

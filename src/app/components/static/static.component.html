@@ -1,0 +1,38 @@
+<mat-stepper orientation="vertical">
+
+
+  <mat-step>
+    <ng-template matStepLabel>Повідомити про вашу IP адресу</ng-template>
+    <ng-template matStepContent>
+      <p>Повідомте вашу IP адресу до вашого Управління освіти. Вас додадуть до системи</p>
+
+      <button mat-button matStepperNext>Далі</button>
+    </ng-template>
+  </mat-step>
+
+  <mat-step>
+    <ng-template matStepLabel>Налаштування роутера</ng-template>
+    <ng-template matStepContent>
+      <p>
+
+        Налаштуйте ваш головний роутер або через який виходять в інтернет.
+      </p>
+      <p>
+        Все що потрібно зробити це замінити DNS Адреси на: </p>
+      <b><pre>
+        208.67.222.222
+        208.67.220.220
+        </pre>
+      </b>
+      <button mat-button matStepperPrevious>Назад</button>
+      <button mat-button matStepperNext>Далі</button>
+    </ng-template>
+  </mat-step>
+
+
+  <mat-step>
+    <ng-template matStepLabel>Перевірка захисту пристрою</ng-template>
+    <app-check></app-check>
+    <button mat-button matStepperPrevious>Back</button>
+  </mat-step>
+</mat-stepper>
